@@ -18,7 +18,7 @@ class Samsung extends Remote{
     public void voiceComandFeature(){
         System.out.println("Samsung Remote have voice command feature");
     }
-}
+}   
 
 public class Upcasting{
     public static void main (String[] arg ){

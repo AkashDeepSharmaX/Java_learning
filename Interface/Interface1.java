@@ -1,6 +1,6 @@
 interface Car{
-    public void haveWheels();
-    public  void havebrakes();
+ void haveWheels();
+ void havebrakes();
 
 }
 class Bmw implements Car{

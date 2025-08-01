@@ -1,6 +1,6 @@
 package interface_mini_project;
 
-public class main {
+public class Main{
     public static void main(String[] args) {
         Appliance fan = new Fan();
         Appliance light = new Light();

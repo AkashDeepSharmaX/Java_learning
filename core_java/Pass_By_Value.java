@@ -12,6 +12,6 @@ public class Pass_By_Value {
 //    Pass_By_Value passByValue=new Pass_By_Value();
 
         Modifying_value(n);//this  will give the new value  updated value which is copied from the stack
-        System.out.println("after method = "+n );// this  will give hte actual value  which is store in the memory
+        System.out.println("After method = "+n );// this  will give hte actual value  which is store in the memory
     }
 }

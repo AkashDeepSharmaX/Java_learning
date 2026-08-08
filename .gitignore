@@ -1,0 +1,9 @@
+# IDE junk
+.idea/
+.vscode/
+
+# Compiled files
+*.class
+
+# OS files
+.DS_Store

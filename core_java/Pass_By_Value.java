@@ -1,50 +1,17 @@
+public class Pass_By_Value {
 
-class Pass_By_Value {
-
-    String name;
-
-    // Primitive: pass-by-value
-    public static void modifyValue(int num) {
-        num += 5;
-        System.out.println("Inside method: num = " + num);
+    public static void Modifying_value(int n) {
+        n +=1;
+        System.out.println("Inside value " + n);
     }
 
-    // Object: reference value is passed by value
-    public static void change(Pass_By_Value passByValue) {
-        passByValue.name = "noob";
-
-        System.out.println("Inside method: name = "
-                + passByValue.name);
-    }
-
-    public static void main(String[] args) {
-
-        // -------------------------
-        // 1. PRIMITIVE
-        // -------------------------
-
+    public static void main(String arg[]) {
         int n = 10;
+        System.out.println("Withot any passing  value to the method = " + n);//this  shows the value which is assigned to the 'n' integer
 
-        System.out.println("Before method: n = " + n);
+//    Pass_By_Value passByValue=new Pass_By_Value();
 
-        modifyValue(n);
-
-        System.out.println("After method: n = " + n);
-
-
-        // -------------------------
-        // 2. OBJECT
-        // -------------------------
-
-        Pass_By_Value s = new Pass_By_Value();
-
-        s.name = "proo";
-
-        System.out.println("\nBefore method: s.name = " + s.name);
-
-        change(s);
-
-        System.out.println("After method: s.name = " + s.name);
+        Modifying_value(n);//this  will give the new value  updated value which is copied from the stack
+        System.out.println("After method = "+n );// this  will give hte actual value  which is store in the memory
     }
 }
-

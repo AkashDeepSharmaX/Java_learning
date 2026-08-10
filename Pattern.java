@@ -1,4 +1,3 @@
-
 public class Pattern {
     public void patternOne(int n){
         for (int i = 0; i < n; i++) {
